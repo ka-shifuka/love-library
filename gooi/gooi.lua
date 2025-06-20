@@ -280,6 +280,19 @@ function gooi.setStyleComp(c)
   return c
 end
 
+---@class gooi.style 
+---@field bgColor? table
+---@field fgColor? table
+---@field font? love.Font
+---@field tooltipFont? love.font
+---@field radius? number
+---@field innerRadius? number
+---@field showBorder? boolean
+---@field borderColor? table
+---@field borderWidth? number
+---@field borderStyle? string
+
+---@param style gooi.style
 function gooi.setStyle(style)
   local s = gooi.processStyle(style)
   component.style = s
